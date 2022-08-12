@@ -1,14 +1,14 @@
 <div class="login-card">
     <h2 class="page-title">Edit Your Post</h2>
-    <form class="form signup-form">
-        <input class="form-input" type="hidden" id="post_id" value='{{}}'/>
+    <form class="form edit-form">
+        <input class="form-input" type="hidden" id="post-id" value='{{post_id}}'/>
       <div class="form-group">
-        <label for="username-signup">Title:</label>
-        <input class="form-input" type="text" id="username-signup" value='{{}}'/>
+        <label for="edit-post">Title:</label>
+        <input class="form-input" type="text" id="title" value='{{title}}'/>
       </div>
       <div class="form-group">
-        <label for="email-signup">Content:</label>
-        <textarea class="form-input" type="text" id="email-signup" >{{}}</textarea>
+        <label for="edit-post">Content:</label>
+        <textarea class="form-input" type="text" id="body" value= '{{content}}'></textarea>
       </div>
      
       <div class="form-group">
@@ -17,3 +17,5 @@
       </div>
     </form>
   </div>
+
+  <script src="/js/edit.js"></script>
